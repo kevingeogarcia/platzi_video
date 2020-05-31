@@ -1,0 +1,204 @@
+  
+  
+  body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    background:  rgba(255, 255, 255, 0.1);
+}
+
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+body::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background:transparent;
+}
+
+.header {
+    align-items: center;
+    background-color: #21c08b;
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+}
+
+.header__img {
+    margin-left: 30px;
+    width: 200px;
+}
+
+.login{
+    background: linear-gradient(#21c08b,#AB88FF); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 1px 9px 10px 5px rgba(95, 95, 95, 0.5);
+}
+
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+     
+}
+
+.login__container--form label{
+    font-size: 14px;
+     
+}
+
+.login__container--remenber-me{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+     
+}
+
+.login__container--remenber-me a{
+     color: white;
+     font-size: 14px;
+     text-decoration: none;
+}
+.login__container--remenber-me a:hover{
+
+    text-decoration: underline;
+}
+
+.login__container--social-media > div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.login__container--social-media > div > img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.login__container--register{
+    font-size: 14;
+    text-align: center;
+    
+}
+.login__container--register a{
+    font-size: 16;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.login__container--register a:hover{
+   
+    text-decoration: underline;
+    
+}
+
+.input{
+    background-color: transparent;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: solid white;
+    outline: none;
+    padding: 0px 20px;
+    margin-bottom: 20px ;
+    height: 50px;
+}
+
+::placeholder{
+    color: white;
+}
+.button{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+.footer{
+    background:#AB88FF ;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.footer a{
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width : 600px){
+
+    .login__container{
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+        box-shadow: none;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
